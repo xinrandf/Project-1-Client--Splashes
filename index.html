@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Introducing Splashes</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-MECn7mZK0s8AjtKoa6HgMHqYjgJv1bVbWcv16O3EOuvbzojVWeNseyX2VINqbodZ" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body id="home">
+    <div id="container">
+    <header>
+      <div class="main-header">
+        <div class="logo">
+          <img src="images/logo.png" alt="Great Cliffs Logo" width="100" height="100">
+        </div>
+        <nav class="main-menu">
+          <!-- Desktop Menu -->
+          <ul class="navbar-nav desktop-menu">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
+            <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <!-- Mobile Menu -->
+          <div class="mobile-menu">
+            <button class="mobile-toggle" onclick="toggleMobileMenu()">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+            <ul class="mobile-dropdown" id="mobileDropdown">
+              <li class="mobile-nav-item active"><a href="index.html">Home</a></li>
+              <li class="mobile-nav-item"><a href="cliffs.html">Cliffs</a></li>
+              <li class="mobile-nav-item"><a href="activities.html">Activities</a></li>
+              <li class="mobile-nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    
+    </header>
+
+    <main>
+      <div>
+        <h1>What is so unique about Splashes?</h1>
+          <div class="text-box">
+            <h2>WWhat is so unique about Splashes?</h2>
+            <p>
+              Splashes is a creative leader in immersive water-based entertainment and design. The company specializes in crafting large-scale water features, interactive fountains, and aquatic stage effects that transform public spaces, resorts, and events into unforgettable experiences. Unlike typical water feature companies, Splashes integrates cutting-edge engineering with artistic vision, ensuring every project blends beauty, functionality, and sustainability. Their portfolio spans luxury hotels, theme parks, urban plazas, and high-profile live shows.
+            </p>
+          </div>
+      </div>
+ 
+      <div>
+        <h2>Where is Splashes?</h2>
+        <div class="text-box">
+          <p>
+            Headquartered in California and serving clients nationwide, Splashes operates within easy reach of major creative hubs. The company’s main design and production facility is located just a short drive from Irvine, allowing close collaboration with partners across the entertainment, hospitality, and public art industries.
+          </p>
+        </div>
+      </div>
+    </main>
+    
+<section>
+  
+      <div id="partners">
+        <div class="cards">
+          <div class="card"><img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"></div>
+          <div class="card"><img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></div>
+          <div class="card"><img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure"></div>
+          <div class="card"><img src="images/partners/partner-collegetours.png" alt="Partner College Tours"></div>
+          <div class="card"><img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"></div>
+          <div class="card"><img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Nondisclaimer -->
+      <div id="nondisclaimer">
+        <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com</div>
+        <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+      </div>
+      <!-- End Nondisclaimer -->
+
+      <!-- Disclaimer -->
+      <div id="disclaimer">
+        <p>
+          This website is designed and created solely for educational purposes
+          only at Westcliff University. All contents are not intended for any
+          commercial gain or use.
+        </p>
+      </div>
+      <!-- End Disclaimer -->
+    </footer>
+    </div>
+
+    <!-- Bootstrap jQuery -->
+
+    <!-- Bootstrap Popper -->
+
+    <!-- Bootstrap JS -->
+
+    <script>
+    function toggleMobileMenu() {
+        const dropdown = document.getElementById('mobileDropdown');
+        dropdown.classList.toggle('show');
+    }
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const dropdown = document.getElementById('mobileDropdown');
+        if (!mobileMenu.contains(event.target)) {
+            dropdown.classList.remove('show');
+        }
+    });
+    </script>
+
+  </body>
+</html>
