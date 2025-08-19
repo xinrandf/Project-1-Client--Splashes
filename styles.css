@@ -67,7 +67,7 @@ td:first-child {
 }
 
 .cliff-title {
-    background: #852B1B;
+    background: #308fee;
     color: #fff;
     font-weight: bold;
     font-size: 1.3em;
@@ -86,7 +86,7 @@ td:first-child {
 /* Header */
 header {
     width: 100%;
-    min-height: 400px;
+    min-height: 1000px;
     padding-top: 3em;
 
     
@@ -124,29 +124,29 @@ header {
   background-size: cover;
 }
 .main-header {
-    background-color:rgba(36, 35, 35, 0.8) ;
-    width: 700px;
-    margin: 2em auto 0 auto;
+    background-color:rgba(51, 101, 123, 0.8) ;
+    width: 3000px;
+    margin:  auto 0 auto;
     min-height: 100px;
-    height: 100px;
+    height: 130px;
 }
 .main-header .logo img {
     width: 100px;
     height: 100px;
     margin: 0 2em 0 0;
-    float: left;
+    float:left;
 }
 
 /* Navigation - Bootstrap Navbar Styling */
 .main-menu {
-    margin-left: 120px;
-    font-weight: 400;
+    margin:auto;
+    font-weight: 800;
 }
 .navbar-nav {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 500;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -172,11 +172,11 @@ header {
     line-height: 100px;
 }
 .navbar-nav .nav-link:hover {
-    background-color: #9ed034 !important;
+    background-color: hsl(184, 100%, 50%) !important;
 
 }
 .navbar-nav .nav-item.active {
-    background: #9ed034;
+    background: hsl(184, 100%, 50%);
     border: none;
 }
 .navbar-nav .nav-item.active .nav-link {
@@ -210,12 +210,12 @@ header {
     position: absolute;
     top: 100%;
     right: 0;
-    background: #333;
+    background: #5f8ae8;
     opacity: 0.85;
-    border: 1px solid #333;
+    border: 1px solid #50bcff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     list-style: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     min-width: 200px;
     z-index: 1000;
@@ -239,10 +239,10 @@ header {
     display: block;
 }
 .mobile-nav-item a:hover {
-    color: #9ed034;
+    color: hsl(184, 100%, 50%);
 }
 .mobile-nav-item.active {
-    background: #9ed034;
+    background: hsl(184, 100%, 50%);
 }
 .mobile-nav-item.active a {
     color: #ffffff;
@@ -291,7 +291,7 @@ main {
 main h1 {
     font-size: 2.5em;
     padding-bottom: 0.5em;
-    color: #9ed034;
+    color: hsl(184, 100%, 50%);
 }
 main h2 {
     font-size: 1.7em;
@@ -427,12 +427,12 @@ footer #nondisclaimer .social .fa-instagram {
 
 /* Text Box Styles */
 .text-box {
-  border: 2px solid #ccc;
+  border: 2px dotted #ccc;
   border-radius: 8px;
   padding: 20px;
   margin: 20px 0;
   background-color: #f9f9f9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(169, 231, 244, 0.1);
 }
 
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
@@ -510,7 +510,7 @@ footer #nondisclaimer .social .fa-instagram {
     gap: 0.5em;
 }
 .btn-success {
-    background: #38b449;
+    background: hsl(184, 100%, 50%);
     border: none;
     font-weight: 800;
 }
