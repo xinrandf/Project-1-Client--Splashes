@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,9 +71,9 @@
     <p><strong>Get in Touch</strong><br>
     📍 Head Office:<br>
     Splashes Inc.<br>
-    1234 Oceanview Drive, Irvine, CA 92618, USA</p>
+    111111 Oceanview Drive, Irvine, CA 92618, USA</p>
 
-    <p>📞 Phone: +1 (949) 555-1234<br>
+    <p>📞 Phone: +1 (111) 111-1234<br>
     📧 Email: info@splashes.com</p>
 
     <p><strong>Office Hours:</strong><br>
@@ -89,10 +90,18 @@
         margin: 20px;        
     }
 </style>
-<form action="/contact" method="post">  
-<fieldset>  
+<form action="/contact" method="post">
+
+<fieldset>
     <legend>Contact Form</legend>
-<div class="bs-example">
+    <style>
+    .contact-form-bg {
+        background: rgba(173, 216, 230, 0.7); /* light blue, semi-transparent */
+        padding: 2em;
+        border-radius: 1em;
+    }
+</style>
+<div class="bs-example contact-form-bg">
         <form action="actions/confirmation.php" method="post">
             <div class="form-group row">
                 <label for="inputName" class="col-sm-2 col-form-label">Name</label>

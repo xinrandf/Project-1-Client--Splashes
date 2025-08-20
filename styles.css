@@ -1,7 +1,4 @@
-/* Activity Table Interactivity Styles */
-table td.selectable {
-    cursor: pointer;
-}
+
 table td.selected {
     background-color: #04dafb !important;
     color: #0501f3;
