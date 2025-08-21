@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="styles.css" rel="stylesheet">
+  < <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body id="about">
@@ -165,28 +167,23 @@
     </footer>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
-    // URL of your raw txt file
-    const url = "https://raw.githubusercontent.com/xinrandf/Project-1-Client--Splashes/refs/heads/main/intro.txt";
+    const url = "https://raw.githubusercontent.com/xinrandf/Project-1-Client--Splashes/main/intro.txt";
 
-    // Fetch the text and put it inside the <p>
-    fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok " + response.statusText);
-        }
-        return response.text();
-      })
-      .then(data => {
-        document.getElementById("intro").textContent = data;
-      })
-      .catch(error => {
-        document.getElementById("intro").textContent = "Failed to load text.";
-        console.error("Fetch error:", error);
-      });
+    $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "text",
+      success: function (data) {
+        $("#intro").text(data);
+      },
+      error: function (xhr, status, error) {
+        $("#intro").text("Failed to load text.");
+        console.error("AJAX error:", status, error);
+      }
+    });
   </script>
 </body>
 

@@ -63,8 +63,13 @@ h6 {
   min-height: 500px;
 }
 
+#welcome .container .jumbotron {
+  width: 500px;
+  height: 500px;
+}
 
-#index .container .jumbotron {
+#index .container .jumbotron,
+#welcome .container .jumbotron {
   background-image: url('images/runfly.jpg');
 
 }
