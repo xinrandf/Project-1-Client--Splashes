@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Splashes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body id="products">
+
+  <div class="container">
+    <!-- Header -->
+    <header class="blog-header py-3 text-center">
+      <a class="blog-header-logo text-dark " href="#">Splashes</a>
+    </header>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
+      <button class="navbar-toggler ml-auto mx-auto" type="button" data-toggle="collapse" data-target="#navbar"
+        aria-controls="mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse py-1" id="navbar">
+        <ul class="navbar-nav ml-auto mx-auto">
+          <li class="nav-item px-5">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item  px-5">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item px-5 active">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron p-4 p-md-5 text-white rounded">
+      <div class="col-md-6 px-0">
+        <h1 class="font-italic">Main Products Overview</h1>
+      </div>
+    </div>
+
+    <main>
+      <p class="activities-intro mb-5">
+        Splashes specializes in a range of innovative, high-quality water feature products designed for entertainment,
+        hospitality, and public spaces.
+        Their portfolio combines cutting-edge engineering with artistic creativity, ensuring every product delivers
+        visual impact, reliability, and sustainability.
+        From large-scale fountains to compact interactive installations, Splashes provides solutions that fit both
+        permanent venues and temporary events.
+      </p>
+
+      <table class="table table-bordered table-hover table-striped activities-table">
+
+        <thead class="thead-dark">
+          <tr>
+            <th>Category</th>
+            <th>Product Name</th>
+            <th>Key Feature</th>
+            <th>Application</th>
+            <th>Technology Used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fountains</td>
+            <td>Infinity Edge Water Wall</td>
+            <td>Hotels, malls</td>
+            <td>Recirculating pump system</td>
+            <td>Dimensions, materials</td>
+          </tr>
+          <tr>
+            <td>Interactive</td>
+            <td>Splash Pad Play Zone</td>
+            <td>Motion-activated water jets</td>
+            <td>Family parks, plaza</td>
+            <td>Motion sensors, LED lighting</td>
+          </tr>
+          <tr>
+            <td>Shows</td>
+            <td>Musical Water Tunnel</td>
+            <td>Water & light show stage integration</td>
+            <td>Live events, theaters</td>
+            <td>DMX-controlled jets</td>
+          </tr>
+          <tr>
+            <td>Sculptures</td>
+            <td>Kinetic Water Sculpture</td>
+            <td>Moving mechanical water shapes</td>
+            <td>Art installations</td>
+            <td>Servo motors, water pumps</td>
+          </tr>
+          <tr>
+            <td>Lighting</td>
+            <td>Submersible RGB Spotlights</td>
+            <td>Waterproof LED lighting</td>
+            <td>Lakes, events</td>
+            <td>Wireless control, battery-powered</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+      <p class="disclaimer">
+        This website is designed and created solely for educational purposes only. Created by Xinran and Zhen, using
+        Bootstrap.
+      </p>
+
+      <div class="awards">
+        <div class="award"><img src="images/awards/bay-area-parent-2019.jpeg" alt="Partner Bus Tours"></div>
+        <div class="award"><img src="images/awards/bay-area-parent-gold2020.png" alt="Partner Cabin Rental"></div>
+        <div class="award"><img src="images/awards/best-colorado-community-media-2021.jpeg"
+            alt="Partner Camping Adventure"></div>
+        <div class="award"><img src="images/awards/best-of-la-kids-winner.jpeg" alt="Partner College Tours"></div>
+        <div class="award"><img src="images/awards/best-of-the-best-2018.jpeg" alt="Partner Bike Rentals"></div>
+        <div class="award"><img src="images/awards/colorado-parenting-family-fav2019.jpeg" alt="Partner Tour Group">
+        </div>
+        <div class="award"><img src="images/awards/colorado-parenting-family-fav2020.png" alt="Partner Bus Tours"></div>
+        <div class="award"><img src="images/awards/colorado-parenting-family-fav2021.png" alt="Partner Cabin Rental">
+        </div>
+        <div class="award"><img src="images/awards/gold-daisy-award-finalist-2018.jpeg" alt="Partner Camping Adventure">
+        </div>
+        <div class="award"><img src="images/awards/mla-swim-lessons-winner-2020-250x250.png"
+            alt="Partner College Tours">
+        </div>
+        <div class="award"><img src="images/awards/website-parenting-oc-2019.jpeg" alt="Partner Bike Rentals"></div>
+      </div>
+      <p class="follow-us">
+        Follow us on
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </p>
+
+    </footer>
+  </div>
+
+  <!-- Custom overlay modal covering the table -->
+  <div id="overlay-content">
+    <h5>Get a quote for selected</h5>
+    <div id="selectedActivities"></div>
+    <div class="mt-3">
+      <button onclick="getInfo()" class="btn btn-primary">Get quotes</button>
+      <button onclick="closeOverlay()" class="btn btn-outline-secondary">Back to products</button>
+    </div>
+  </div>
+
+  <div id="activity-overlay">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function showOverlay() {
+      var table = document.querySelector('table.activities-table');
+      var overlay = document.getElementById('activity-overlay');
+      var content = document.getElementById('overlay-content');
+      var rect = table.getBoundingClientRect();
+      overlay.style.display = 'block';
+      content.style.display = 'block';
+      content.style.left = rect.left + window.scrollX + (rect.width - content.offsetWidth) / 2 + 'px';
+      content.style.top = rect.top + window.scrollY + 40 + 'px';
+    }
+    function closeOverlay() {
+      document.getElementById('activity-overlay').style.display = 'none';
+      document.getElementById('overlay-content').style.display = 'none';
+    }
+    function getInfo() {
+      // your logic
+      closeOverlay();
+    }
+
+    $(function () {
+      var selected = [];
+      $('table.activities-table td').addClass('selectable').on('click', function () {
+        var text = $(this).text().trim();
+        var idx = selected.indexOf(text);
+        if (idx === -1 && text !== '' && !$(this).hasClass('selected')) {
+          selected.push(text);
+          $(this).addClass('selected');
+        } else if (idx !== -1) {
+          selected.splice(idx, 1);
+          $(this).removeClass('selected');
+        }
+        var html = selected.length ? selected.map(function (act) { return '<div>' + act + '</div>'; }).join('') : '<div>No activities selected.</div>';
+        $('#selectedActivities').html(html);
+        showOverlay();
+      });
+    });
+  </script>
+
+</body>
+
+</html>
