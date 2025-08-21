@@ -1,0 +1,132 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+
+
+
+#index .container .jumbotron {
+  background-image: url('images/runfly.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  min-height: 500px;
+}
+
+
+
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+
+
+
+footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  /* border-top: .05rem solid #e5e5e5; */
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+}
+
+footer .follow-us a {
+  margin: 0 0.5rem;
+  color: #666;
+}
+
+footer .follow-us a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+footer .disclaimer {
+  color: #ccc;
+}
+
+
+
+.awards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+  }
+.award {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+ .award img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    filter: grayscale(90%);
+    border-radius: 8px;
+    display: block;
+  }
