@@ -9,7 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="styles.css" rel="stylesheet">
-  < <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
 
 </head>
 
@@ -91,80 +93,50 @@
           experiences
           that make a lasting impact.</p>
       </div>
-
-      <div class="about-cards row">
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 border">
-            <img src="images/cliff-west-sea.jpg" class="card-img-top" alt="West Cliff">
-            <div class="card-body">
-              <h5 class="card-title">Global Reach with Local Expertise</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 border">
-            <img src="images/cliff-north-mountain.jpg" class="card-img-top" alt="North Cliff">
-            <div class="card-body">
-              <h5 class="card-title">Sustainability and Technology</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 border">
-            <img src="images/cliff-east-river.jpg" class="card-img-top" alt="East Cliff">
-            <div class="card-body">
-              <h5 class="card-title">Signature Experiences</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 border">
-            <img src="images/cliff-south-canyon.jpg" class="card-img-top" alt="South Cliff">
-            <div class="card-body">
-              <h5 class="card-title">Innovative Products and Solutions</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-
-      <p class="disclaimer">
-        This website is designed and created solely for educational purposes only. Created by Xinran and Zhen, using
-        Bootstrap.
-      </p>
-
-      <div class="awards">
-        <ul class="awards list-unstyled d-flex flex-wrap justify-content-center align-items-center">
-          <li class="award"><img src="images/awards/bay-area-parent-2019.jpeg" alt="Partner Bus Tours"></li>
-          <li class="award"><img src="images/awards/bay-area-parent-gold2020.png" alt="Partner Cabin Rental"></li>
-          <li class="award"><img src="images/awards/best-colorado-community-media-2021.jpeg"
-              alt="Partner Camping Adventure"></li>
-          <li class="award"><img src="images/awards/best-of-la-kids-winner.jpeg" alt="Partner College Tours"></li>
-          <li class="award"><img src="images/awards/best-of-the-best-2018.jpeg" alt="Partner Bike Rentals"></li>
-          <li class="award"><img src="images/awards/colorado-parenting-family-fav2019.jpeg" alt="Partner Tour Group">
-          </li>
-          <li class="award"><img src="images/awards/colorado-parenting-family-fav2020.png" alt="Partner Bus Tours"></li>
-          <li class="award"><img src="images/awards/colorado-parenting-family-fav2021.png" alt="Partner Cabin Rental">
-          </li>
-          <li class="award"><img src="images/awards/gold-daisy-award-finalist-2018.jpeg"
-              alt="Partner Camping Adventure"></li>
-          <li class="award"><img src="images/awards/mla-swim-lessons-winner-2020-250x250.png"
-              alt="Partner College Tours"></li>
-          <li class="award"><img src="images/awards/website-parenting-oc-2019.jpeg" alt="Partner Bike Rentals"></li>
-        </ul>
+      <div id="vue" class="about-cards row">
+        <imagecard v-for="imagecard in imagecards" :image="imagecard.image" :title="imagecard.title"></imagecard>
       </div>
 
-      <p class="follow-us">
-        Follow us on
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-twitter"></a>
-      </p>
+  </div>
+  </main>
 
-    </footer>
+  <!-- Footer -->
+  <footer>
+
+    <p class="disclaimer">
+      This website is designed and created solely for educational purposes only. Created by Xinran and Zhen, using
+      Bootstrap.
+    </p>
+
+    <div class="awards">
+      <ul class="awards list-unstyled d-flex flex-wrap justify-content-center align-items-center">
+        <li class="award"><img src="images/awards/bay-area-parent-2019.jpeg" alt="Partner Bus Tours"></li>
+        <li class="award"><img src="images/awards/bay-area-parent-gold2020.png" alt="Partner Cabin Rental"></li>
+        <li class="award"><img src="images/awards/best-colorado-community-media-2021.jpeg"
+            alt="Partner Camping Adventure"></li>
+        <li class="award"><img src="images/awards/best-of-la-kids-winner.jpeg" alt="Partner College Tours"></li>
+        <li class="award"><img src="images/awards/best-of-the-best-2018.jpeg" alt="Partner Bike Rentals"></li>
+        <li class="award"><img src="images/awards/colorado-parenting-family-fav2019.jpeg" alt="Partner Tour Group">
+        </li>
+        <li class="award"><img src="images/awards/colorado-parenting-family-fav2020.png" alt="Partner Bus Tours"></li>
+        <li class="award"><img src="images/awards/colorado-parenting-family-fav2021.png" alt="Partner Cabin Rental">
+        </li>
+        <li class="award"><img src="images/awards/gold-daisy-award-finalist-2018.jpeg" alt="Partner Camping Adventure">
+        </li>
+        <li class="award"><img src="images/awards/mla-swim-lessons-winner-2020-250x250.png" alt="Partner College Tours">
+        </li>
+        <li class="award"><img src="images/awards/website-parenting-oc-2019.jpeg" alt="Partner Bike Rentals"></li>
+      </ul>
+    </div>
+
+    <p class="follow-us">
+      Follow us on
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-twitter"></a>
+    </p>
+
+  </footer>
   </div>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -184,6 +156,33 @@
         console.error("AJAX error:", status, error);
       }
     });
+
+
+    new Vue({
+      el: "#vue",
+      data: {
+        imagecards: [
+          { image: 'images/cliff-west-sea.jpg', title: 'Sustainability and Technology' },
+          { image: 'images/cliff-north-mountain.jpg', title: 'Global Reach with Local Expertise' },
+          { image: 'images/cliff-east-river.jpg', title: 'Signature Experiences' },
+          { image: 'images/cliff-south-canyon.jpg', title: 'Innovative Products and Solutions' }
+        ]
+      },
+      components: {
+        'imagecard': {
+          props: ['image', 'title'],
+          template: `<div class="col-md-6 mb-4">
+                      <div class="card h-100 border">
+                        <img :src="image" class="card-img-top" :alt="title">
+                        <div class="card-body">
+                          <h5 class="card-title"> {{ title }} </h5>
+                        </div>
+                      </div>
+                    </div>`
+        }
+      }
+    });
+
   </script>
 </body>
 
